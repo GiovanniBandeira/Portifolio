@@ -5,6 +5,7 @@
 *{
     padding: 0;
     border: 0;
+    scrollbar-width: none;
 }
 
 section{
@@ -14,6 +15,7 @@ section{
 
 section h1{
     text-align: center;
+    font-size: 30px;
 }
 
 /*=====================================================*/
@@ -24,55 +26,64 @@ header{
     background: #f8f8f8;
     position: fixed;
     width: 100%;
-    height: 50px;
+    height: 60px;
     top: 0;
     left: 0;
-    padding: 0px 10px;
+    padding: 0px 15px;
     display: flex;
     align-items: center;
+    z-index: 1000;
 }
 
 header h1 {
     margin: 0px 15px;
-    font-size: 1.5rem;
+    font-size: 20px;
     flex-grow: 1;
 }
         
 header ul{
     display: flex;
     margin: 0;
-    padding: 0;
+    padding: 15px;
+    font-size: 15px;
+    
 }
-header li{
+header button{
+    font-size: 15px;
     list-style: none;
     margin: 0px 15px;
+    background: none;
 }
 
 /*=====================================================*/
 /*Home*/
 
 .home{
-    margin-top: 70px;
-    padding: 30px;
+    margin-top: 200px;
+    margin-bottom: 200px;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 .home > div{
-    justify-content: left;
+    justify-content: center;
     align-content: stretch;
 }
 
 .home div{
-    font-size: 30px;
+    height: 400px;
+    width: auto;
+    font-size: 35px;
 }
 
-.home div h1{
+.home h1, .home h2{
     font-family: 'Handjet', sans-serif;
 }
 
 .socialMidia img{
+    margin-top: 30px;
     width: 50px;
     height: auto;
     padding: 12px;
@@ -80,7 +91,7 @@ header li{
 
 .socialMidia img:hover{
     transform: scale(1.2);
-    filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.2));
+    filter: drop-shadow(0px 5px 10px rgba(0, 0, 0, 0.2));
 }
 
 .socialMidia:link,
@@ -100,7 +111,7 @@ header li{
 }
 
 .home .imagemHome{
-    width: 500px;
+    width: 600px;
     height: auto;
     filter: drop-shadow(2.4px 2.4px 3.2px rgba(0, 0, 0, 0.15));
 }
@@ -108,9 +119,41 @@ header li{
 /*=====================================================*/
 /*Sobre*/
 
+#Sobre{
+    align-items: center;
+    text-align: center;
+}
+
+#Sobre h1, 
+#Sobre p, 
+#Sobre a{
+    font-size: 30px;
+}
+
+.softwares div{
+    display:grid;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.softwares .skills{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    overflow: scroll;
+}
+
+.softwares .Learn{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    overflow: scroll;
+}
+
 .softwares img{
     width: 60px;
     height: auto;
+    margin: 5px;
 }
 
 .softwares .skills img{
@@ -125,13 +168,63 @@ header li{
 /*Footer*/
 
 footer{
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.4);
     background: #8f4478;
     width: 100%;
-    height: 200px;
-    bottom: 0;
+    height: 300px;
     left: 0;
-    padding: 0px 10px;
+    position: absolute;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+footer .rodaPe{
     display: flex;
     align-items: center;
+    font-size: 20px;
+}
+
+footer .rodaPe a{
+    font-size: 15px;
+}
+
+footer .cursosRodaPe{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    margin: 50px;
+}
+
+footer .cursosRodaPe .cursFooter{
+    display: flex;
+    justify-content: space-around;
+}
+
+footer .cursosRodaPe .cursFooter div{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .contatoRodaPe{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    margin: 50px;
+}
+
+footer .contatoRodaPe .contFooter{
+    display: flex;
+    justify-content: space-around;
+}
+
+footer .contatoRodaPe .contFooter div{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+footer div img{
+    height: 50px;
+    width: auto;
 }

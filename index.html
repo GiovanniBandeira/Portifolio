@@ -8,84 +8,140 @@
     <script src="main.js"></script>
     
 </head>
-<body>
-    <header class="top_menu">
-            <h1>Portfólio</h1>
-            <ul>
-                <li><a href="#Home">Home</a></li>
-                <li><a href="#Sobre">Sobre</a></li>
-                <li><a href="#Projetos">Projetos</a></li>
-                <li><a href="#Contato" onclick="">Contato</a></li>
-            </ul>
-    </header>
+<body id="topo">
+    <div>
+        <header class="top_menu">
+                <h1>Portfólio</h1>
+                <ul>
+                    <button onclick="topScroll()" style="cursor: pointer">Home</button>
+                    <button onclick="sobreScroll()" style="cursor: pointer">Sobre</button>
+                    <button onclick="projetosScroll()" style="cursor: pointer">Projetos</button>
+                    <button onclick="contatoScroll()" style="cursor: pointer">Contato</button>
+                </ul>
+        </header>
 
-    <section class="home" id="Home">
-        <div>
-            <div class="texto_home">
-                <h1>Prazer, Eu sou</h1>
-                <h2>Giôvanni <br>
-                    Bandeira</h1>
-                <p>Desenvolvedor Back-end <br>e Futuro FullStack</p>
-            </div>
+        <section class="home">
             <div>
-                <div class="socialMidia">
-                    <a href="https://www.linkedin.com/in/giovanni-bandeira" target="_blank">
-                        <img src="Image/linkedinPreto.png" alt="linkedin" id="linkedin" style="cursor: pointer">
-                    </a>
-                    <img src="Image/gitsPreto.png" alt="gits" onclick="abrirImagem()" style="cursor: pointer">
-                    <a href="mailto:giovanni.bandeira.sousa@gmail.com" target="_blank">
-                        <img src="Image/emailPreto.png" alt="email" id="email" style="cursor: pointer">
-                    </a>
-                    
+                <div class="texto_home">
+                    <h1>Prazer, Eu sou</h1>
+                    <h2>Giôvanni <br>
+                        Bandeira</h1>
+                    <p>Desenvolvedor <br>FullStack</p>
+                </div>
+                <div>
+                    <div class="socialMidia">
+                        <img src="Image/linkedinPreto.png" alt="linkedin" id="linkedin" onclick="linksClick()" style="cursor: pointer">  
+                        <img src="Image/gitsPreto.png" alt="gits" id="gits" onclick="linksClick()" style="cursor: pointer" >
+                        <img src="Image/emailPreto.png" alt="email" id="email" onclick="linksClick()" style="cursor: pointer">
+                    </div>
                 </div>
             </div>
-        </div>
-        <img src="Image/imagemHome.png" alt="ImageHome" class="imagemHome">
-    </section>
-
-    <section class="Sobre" id="Sobre">
-        <div class="mim">
-            <h1>Sobre</h1>
-            <p>
-                Sou aluno de programação no curso de Ciência da Computação, sou apaixonado por 
-                tecnologia e tenho um grande prazer em desenvolver meu conhecimento na área. <br> Já trabalhei
-                em áreas, as quais, sempre fiz com que a tecnoligia fizessem parte, além de cursos e 
-                varios eventos. Sempre gostei de Desing, inclusive já trabalhando <br> profissionalmente, por 
-                isso já desenvilvir alguns projetos <Strong>Front-end</Strong>, mas meu foco principal, atualmente
-                é o <Strong>Back-end</Strong>. Tenho interesse em futuramente me tornar <br> um <Strong>Exelente Desenvolvedor FullStack</Strong>.
-            </p>
-            <a href="CV">Baixe aqui o CV para mais informações</a>
-        </div>
-        <div class="softwares">
-            <h1>Skills</h1>
-            <div class="skills">
-                <img src="Image/HTML.png" alt="HTML">
-                <img src="Image/CSS.png" alt="CSS">
-                <img src="Image/JavaScript.png" alt="JavaScript">
-                <img src="Image/Python.png" alt="Python">
-                <img src="Image/java.png" alt="java">
-            </div>
-            <h1>Learn</h1>
-            <div class="Learn">
-                <img src="Image/nodejs.png" alt="nodejs">
-                <img src="Image/postgreSQL.png" alt="postgreSQL">
-                <img src="Image/firebase.png" alt="firebase">
-                <img src="Image/React.png" alt="React">
-                <img src="Image/TypeScript.png" alt="TypeScript">
-            </div>
-        </div>
-    </section>
-
-    <section class="Projetos" id="Projetos">
-
-    </section>
-
-    <footer>
+            <img src="Image/imagemHome.png" alt="ImageHome" class="imagemHome">
         </section>
-            <div class="rodaPe">
-            
+
+        <section id="Sobre">
+            <div class="sobre">
+                <h1>Sobre</h1>
+                <p>
+                    Sou estudante de Ciência da Computação, apaixonado por tecnologia e dedicado a expandir 
+                    meu conhecimento na área. Ao longo da minha trajetória, sempre busquei integrar a 
+                    tecnologia em todas as áreas em que atuei, complementando minha formação com diversos 
+                    cursos e participações em eventos. Tenho um forte interesse por design, o que me levou 
+                    a trabalhar profissionalmente na área e a desenvolver vários projetos, assim me deixando 
+                    mais capacitados em projetos <strong>Front-end</strong>. Atualmente, minhas principais 
+                    habilidades é em <strong>Back-end</strong> onde desenvolvo a maior parte de meus projetos.
+                    Tenho como a ambição de me tornar um <Strong>Desenvolvedor de excelência</Strong>, onde consiga
+                    me destacar em diversas áreas e entregar o melhor que o mercado de TI tem a oferecer
+                    
+                    .
+                </p>
+                <a href="CV">Baixe aqui o CV para mais informações</a>
             </div>
-        <section class="Contato" id="Contato">
-    </footer>
+            <div class="softwares">
+                <h1>Skills</h1>
+                <div class="skills">
+                    <img src="Image/HTML.png" alt="HTML">
+                    <img src="Image/CSS.png" alt="CSS">
+                    <img src="Image/JavaScript.png" alt="JavaScript">
+                    <img src="Image/Python.png" alt="Python">
+                    <img src="Image/java.png" alt="java">
+                </div>
+                <h1>Learn</h1>
+                <div class="Learn">
+                    <img src="Image/nodejs.png" alt="nodejs">
+                    <img src="Image/postgreSQL.png" alt="postgreSQL">
+                    <img src="Image/firebase.png" alt="firebase">
+                    <img src="Image/React.png" alt="React">
+                    <img src="Image/TypeScript.png" alt="TypeScript">
+                </div>
+            </div>
+        </section>
+
+        <section class="Projetos" id="Projetos">
+            <div>
+                <h1>Projetos</h1>
+                <div class="proj">
+
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            </section class="Contato" id="Contato">
+                <div class="rodaPe">
+                    <div class="cursosRodaPe">
+                        <h2>Cursos</h2>
+                        <div class="cursFooter">
+                            <div>
+                                <img src="Image/logoFaculdadeCatolica.png" alt="logoFaculdadeCatolica">
+                                <a href="https://catolicapb.com.br/principal/">Faculdade Católica da Paraíba</a>
+                            </div>
+                            <div>
+                                <img src="Image/logoCursoEmVideo.png" alt="logoCursoEmVideo">
+                                <a href="https://www.cursoemvideo.com/">Curso em Vídeo</a>
+                            </div>
+                            <div>
+                                <img src="Image/logoMicrosoft.png" alt="logoMicrosoft">
+                                <a href="https://learn.microsoft.com/pt-br/">Microsoft Learn</a>
+                            </div>
+                            <div>
+                                <img src="" alt="">
+                                <a href=""></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contatoRodaPe">
+                        <h2>Contato e Informações</h2>
+                        <div class="contFooter">
+                            <div>
+                                <img src="Image/linkedinPreto.png" alt="linkedinContato">
+                                <a href="">LinkedIn</a>
+                            </div>
+                            <div>
+                                <img src="Image/emailPreto.png" alt="emailContato">
+                                <a href="">Email</a>
+                            </div>
+                            <div>
+                                <img src="Image/github.png" alt="githubContato">
+                                <a href="">GitHub</a>
+                            </div>
+                            <div>
+                                <img src="Image/gitlab.png" alt="gitlabContato">
+                                <a href="">GitLab</a>
+                            </div>
+                            <div>
+                                <img src="" alt="">
+                                <a href=""></a>
+                            </div>
+                            <div>
+                                <img src="" alt="">
+                                <a href=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <section>
+        </footer>
+    </div>
 </body>
 </html>
